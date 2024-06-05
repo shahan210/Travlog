@@ -1,18 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Layout from "../../Global/Layout";
-import Explore from "./Components/Explore";
-import Booking from "../../assets/PNG/booking.png";
-import Airbnb from "../../assets/PNG/airbnb.png";
-import Expedia from "../../assets/PNG/expedia.png";
 import Trip from "../../assets/PNG/Group.png";
 import Rbitz from "../../assets/PNG/Rbitz.png";
+import Airbnb from "../../assets/PNG/airbnb.png";
+import Booking from "../../assets/PNG/booking.png";
+import Expedia from "../../assets/PNG/expedia.png";
 import Categories from "./Components/Categories";
-import { motion } from "framer-motion";
-
+import Explore from "./Components/Explore";
+import "./Home.css";
+import Destination from "./Components/Destination";
 const Index = () => {
   return (
     <Layout>
-      <div className="w-full mt-10">
+      <motion.div className="w-full mt-10">
         {/* First Section  */}
         <Explore />
         {/* Second Section */}
@@ -20,7 +21,7 @@ const Index = () => {
           initial={{ y: 100, opacity: 0, scale: 1 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1}}
           className="w-full justify-center items-center flex gap-28 mt-10"
         >
           <img src={Trip} className=" cursor-pointer" alt="Tripadvisor" />
@@ -32,10 +33,8 @@ const Index = () => {
         {/* Third Section */}
         <Categories />
         {/* Fourth Section */}
-        <section className="my-10">
-          <div className="my-10">asdas</div>
-        </section>
-      </div>
+        <Destination />
+      </motion.div>
     </Layout>
   );
 };
