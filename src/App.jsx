@@ -1,7 +1,10 @@
+import Layout from "./Global/Layout";
+import Index from "./Pages/Home/Index";
+
 function App() {
   return (
     <>
-      <div></div>
+      <Index />
     </>
   );
 }
