@@ -3,11 +3,16 @@ import Planes from "../../../assets/PNG/Group 1.png";
 import Case from "../../../assets/PNG/Suitcase.png";
 import Play from "../../../assets/PNG/Play.png";
 import Button from "../../../Global/Components/Button";
-
+import { motion } from "framer-motion";
 const Explore = () => {
   return (
     <section className="grid grid-cols-3 gap-10 h-fit">
-      <div className="flex-col flex gap-10 mt-10">
+      <motion.div
+        initial={{ x: 100, opacity: 0, scale: 1 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex-col flex gap-10 mt-10 ml-5"
+      >
         <Button className="animation Explore">
           <p>Explore the world</p>
           <img src={Case} alt="Explore the world" />
@@ -29,10 +34,15 @@ const Explore = () => {
             <p>Watch Demo</p>
           </Button>
         </div>
-      </div>
-      <div className="col-span-2">
-        <img src={Planes} alt="grid" className="w-fit h-[750px]" />
-      </div>
+      </motion.div>
+      <motion.div
+        initial={{ x: -100, opacity: 0, scale: 1 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="col-span-2 ml-10"
+      >
+        <img src={Planes} alt="grid" className="w-fit " />
+      </motion.div>
     </section>
   );
 };
