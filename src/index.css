@@ -8,3 +8,15 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+.logIn {
+  @apply bg-white hover:bg-gray-100 text-black  w-[120px] rounded-3xl p-3;
+}
+.purpleButton {
+  @apply bg-[#5d50c6] hover:bg-[#7061e0] text-white w-[120px] rounded-3xl p-3;
+}
+.animation {
+  @apply transition-all ease-in-out duration-200;
+}
+.Explore {
+  @apply shadow-sm hover:shadow-md  rounded-3xl text-[#F85E9F] py-3 w-fit px-5 flex items-center gap-2;
+}

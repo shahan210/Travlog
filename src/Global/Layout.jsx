@@ -4,10 +4,12 @@ import Footer from "./Components/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
-      <div className="min-h-screen">{children}</div>
-      <Footer />
+    <div className="flex justify-center">
+      <div className="max-w-[1200px]">
+        <Navbar />
+        <div className="min-h-screen">{children}</div>
+        <Footer />
+      </div>
     </div>
   );
 };
