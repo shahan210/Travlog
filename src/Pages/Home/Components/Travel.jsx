@@ -11,11 +11,11 @@ const Travel = () => {
       transition={{ duration: 1 }}
       className="my-20 p-2"
     >
-      <div className="lg:grid lg:grid-cols-3 flex flex-col relative">
+      <div className="travDiv">
         <div className="lg:col-span-2 overflow-visible lg:m-0 mb-5">
-          <img src={TravelPic} alt="" className="w-[1100px] lg:h-[600px] xl:h-[700px] lg:ml-[-120px] " />
+          <img src={TravelPic} alt="" className="travImage" />
         </div>
-        <div className="p-2 flex flex-col  gap-4 relative">
+        <div className="p-2 flex flex-col gap-4 relative">
           <p className="sideheading">Travel Point</p>
           <div className="sideDesc">
             <p>We helping you find your dream location</p>
@@ -27,7 +27,7 @@ const Travel = () => {
           <div className="absolute lg:top-[30%] lg:right-[-6%] xl:top-[30%] xl:right-[-27%] ">
             <img src={TravelTag} alt="" className=" cursor-pointer lg:w-[220px] xl:w-fit lg:block hidden" />
           </div>
-          <div className="flex gap-4 flex-wrap my-20">
+          <div className="travBoxDiv">
             <div className="travelBox">
               <p className="travelBox-head">500+</p>
               <p className="tracelBox-dec">Holiday Package</p>

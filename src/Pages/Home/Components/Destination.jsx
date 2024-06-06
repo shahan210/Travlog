@@ -16,14 +16,14 @@ const Destination = () => {
       transition={{ duration: 1 }}
       className="my-20 p-2"
     >
-      <div className="my-10 flex justify-between lg:flex-row sm:flex-col sm:gap-5 items-center">
-        <div>
+      <div className="destDiv">
+        <div className="flex flex-col gap-2">
           <p className="sideheading">Top Destination</p>
           <div className="sideDesc">
             <p>Explore top destination</p>
           </div>
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="destOptions">
           <div className="relative">
             <Button className="destButtonNone"></Button>
             <div className="absolute top-[30px] right-[28px]">

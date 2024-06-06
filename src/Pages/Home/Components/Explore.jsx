@@ -6,32 +6,33 @@ import Button from "../../../Global/Components/Button";
 import { motion } from "framer-motion";
 const Explore = () => {
   return (
-    <section className="lg:grid lg:grid-cols-3 flex flex-col-reverse sm:gap-2 lg:gap-10 h-fit">
+    <section className="lg:grid lg:grid-cols-3 flex flex-col-reverse sm:gap-2 lg:gap-10  h-fit my-10">
       <motion.div
         initial={{ x: 100, opacity: 0, scale: 1 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="flex-col flex sm:gap-5 lg:gap-10 lg:mt-10 ml-5 sm:justify-center sm:items-center"
+        className="flex-col flex gap-5 lg:gap-10 lg:mt-10 ml-5 justify-center items-center"
       >
         <Button className="animation Explore">
-          <p>Explore the world</p>
+          <p className="font-bold text-xs sm:text-base">Explore the world!</p>
           <img src={Case} alt="Explore the world" />
         </Button>
         <div>
-          <h1 className="sm:text-5xl text-center lg:text-4xl xl:text-6xl sm:leading-[60px] lg:leading-[80px] font-bold">
+          <h1 className="discoverTitle">
             Travel <span className=" text-[#F85E9F]">top destination</span> of the world
           </h1>
         </div>
-        <div className="text-slate-500 text-sm lg:text-lg sm:leading-5 lg:leading-8 flex flex-col">
-          <p>We always make our cutomer happy by</p>
-          <p>providing</p>
-          <p>as many choices as possible </p>
+        <div className="discDesc">
+          <p className="hidden lg:block">We always make our cutomer happy by</p>
+          <p className="hidden lg:block">providing</p>
+          <p className="hidden lg:block">as many choices as possible </p>
+          <p className="lg:hidden text-center text-wrap">
+            We always make our cutomer happy by providing as many choices as possible
+          </p>
         </div>
-        <div className="flex gap-2 items-center">
-          <Button className="animation purpleButton shadow-sm lg:text-sm hover:shadow-md !w-[150px]">
-            Get Started
-          </Button>
-          <Button className="animation logIn !w-[180px] items-center lg:text-sm shadow-sm hover:shadow-md !font-bold !p-4 flex justify-center border border-gray-100 gap-2">
+        <div className="discOptions">
+          <Button className="discStart">Get Started</Button>
+          <Button className="discWatch">
             <img src={Play} alt="Watch Demo" />
             <p>Watch Demo</p>
           </Button>

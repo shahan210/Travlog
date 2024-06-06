@@ -27,11 +27,11 @@ const Index = () => {
           transition={{ duration: 1 }}
           className="SecondSectionDiv"
         >
-          <img src={Trip} className=" cursor-pointer" alt="Tripadvisor" />
-          <img src={Expedia} className=" cursor-pointer" alt="Expedia" />
-          <img src={Booking} className=" cursor-pointer" alt="Booking" />
-          <img src={Airbnb} className=" cursor-pointer" alt="Airbnb" />
-          <img src={Rbitz} className=" cursor-pointer" alt="Rbitz" />
+          <img src={Trip} className=" brandImage" alt="Tripadvisor" />
+          <img src={Expedia} className=" brandImage" alt="Expedia" />
+          <img src={Booking} className=" brandImage" alt="Booking" />
+          <img src={Airbnb} className=" brandImage" alt="Airbnb" />
+          <img src={Rbitz} className=" brandImage" alt="Rbitz" />
         </motion.section>
         {/* Third Section */}
         <Categories />

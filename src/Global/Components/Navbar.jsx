@@ -7,7 +7,7 @@ const Navbar = () => {
   const [drawer, setDrawer] = useState(false);
   return (
     <section className="flex justify-center">
-      <nav className="container flex justify-between  px-4 py-4 items-center">
+      <nav className="container flex justify-between sm:flex-row  flex-row-reverse px-4 py-4 items-center">
         <div className="flex lg:hidden" onClick={() => setDrawer(!drawer)}>
           <img src={DrawerMenu} alt="menu" />
         </div>
@@ -19,22 +19,24 @@ const Navbar = () => {
                 : "fixed z-50 top-0 left-0 h-full w-0 bg-[#5d50c6] animation"
             }
           >
-            <div className={drawer ? "visible animation !duration-300" : "invisible animation !duration-100"}>
+            <div className={drawer ? "visible" : "invisible "}>
               <div className="w-full p-4 justify-end flex" onClick={() => setDrawer(false)}>
                 <IoClose className="text-white size-6" />
               </div>
               <div className="flex flex-col p-4 gap-5">
                 <p className="text-white cursor-pointer p-2">Home</p>
-                <p className="cursor-pointer hover:text-white animation p-2">Discover</p>
-                <p className="cursor-pointer hover:text-white animation p-2">Special Deals</p>
-                <p className="cursor-pointer hover:text-white animation p-2">Contact</p>
+                <p className="sidebar">Discover</p>
+                <p className="sidebar">Special Deals</p>
+                <p className="sidebar">Contact</p>
+                <p className="sm:hidden sidebar">Log In</p>
+                <p className="sm:hidden sidebar">Sign Up</p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex gap-2 items-center cursor-pointer">
           <img src={Logo} alt="Travlog Logo" className="lg:w-[35px] sm:w-[25px]" />
-          <h1 className="sm:text-lg lg:text-2xl font-bold ">Travlog</h1>
+          <h1 className="text-lg lg:text-2xl font-bold ">Travlog</h1>
         </div>
         <div className="lg:flex hidden text-gray-400 gap-20 text-sm font-bold">
           <p className="text-black cursor-pointer">Home</p>
@@ -42,7 +44,7 @@ const Navbar = () => {
           <p className="cursor-pointer">Special Deals</p>
           <p className="cursor-pointer">Contact</p>
         </div>
-        <div className="flex justify-between gap-2">
+        <div className="hidden sm:flex justify-between gap-2">
           <div>
             <Button className="logIn  animation">Log In</Button>
           </div>

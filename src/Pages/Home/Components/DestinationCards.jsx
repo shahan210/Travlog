@@ -2,7 +2,7 @@ import React from "react";
 import { FaStar } from "react-icons/fa6";
 const DestinationCards = ({ title, place, rating, Image, price }) => {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center sm:mb-0 mb-5">
       <div className="destCard">
         <div className="flex flex-col w-full h-full gap-1 items-center">
           <img src={Image} alt="Best Tour Guide" className=" w-full lg:h-[280px] sm:h-[180px]" />
