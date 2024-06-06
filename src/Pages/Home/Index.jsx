@@ -11,6 +11,7 @@ import Explore from "./Components/Explore";
 import "./Home.css";
 import Destination from "./Components/Destination";
 import Travel from "./Components/Travel";
+import Features from "./Components/Features";
 
 const Index = () => {
   return (
@@ -24,7 +25,7 @@ const Index = () => {
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="w-full justify-center items-center flex gap-28 mt-10"
+          className="SecondSectionDiv"
         >
           <img src={Trip} className=" cursor-pointer" alt="Tripadvisor" />
           <img src={Expedia} className=" cursor-pointer" alt="Expedia" />
@@ -39,6 +40,7 @@ const Index = () => {
         {/* Fifth Section */}
         <Travel />
         {/* Sixth Section */}
+        <Features />
       </div>
     </Layout>
   );

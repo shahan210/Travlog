@@ -4,8 +4,8 @@ import Footer from "./Components/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex justify-center">
-      <div className="max-w-[1300px]">
+    <div className="flex justify-center items-center">
+      <div className="max-w-[1000px] xl:max-w-[1300px]">
         <Navbar />
         <div className="min-h-screen">{children}</div>
         <Footer />

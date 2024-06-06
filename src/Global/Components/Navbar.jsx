@@ -4,7 +4,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <section className="flex justify-center">
-      <nav className="container flex justify-between  px-4 py-8 items-center">
+      <nav className="container flex justify-between  px-4 py-4 items-center">
         <div className="flex gap-2 items-center cursor-pointer">
           <img src={Logo} alt="Travlog Logo" className="w-[35px]" />
           <h1 className="text-2xl font-bold ">Travlog</h1>

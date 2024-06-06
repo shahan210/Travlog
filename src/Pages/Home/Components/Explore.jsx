@@ -18,7 +18,7 @@ const Explore = () => {
           <img src={Case} alt="Explore the world" />
         </Button>
         <div>
-          <h1 className=" text-6xl leading-[80px] font-bold">
+          <h1 className="lg:text-4xl xl:text-6xl leading-[80px] font-bold">
             Travel <span className=" text-[#F85E9F]">top destination</span> of the world
           </h1>
         </div>
@@ -27,9 +27,9 @@ const Explore = () => {
           <p>providing</p>
           <p>as many choices as possible </p>
         </div>
-        <div className="flex gap-8 items-center">
-          <Button className="animation purpleButton shadow-sm hover:shadow-md !w-[150px]">Get Started</Button>
-          <Button className="animation logIn !w-[180px] shadow-sm hover:shadow-md !font-bold !p-4 flex justify-center border border-gray-100 gap-2">
+        <div className="flex gap-2 items-center">
+          <Button className="animation purpleButton shadow-sm lg:text-sm hover:shadow-md !w-[150px]">Get Started</Button>
+          <Button className="animation logIn !w-[180px] items-center lg:text-sm shadow-sm hover:shadow-md !font-bold !p-4 flex justify-center border border-gray-100 gap-2">
             <img src={Play} alt="Watch Demo" />
             <p>Watch Demo</p>
           </Button>

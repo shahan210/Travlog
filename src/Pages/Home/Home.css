@@ -11,10 +11,10 @@
   @apply shadow-sm hover:shadow-md  rounded-3xl text-[#F85E9F] py-3 w-fit px-5 flex items-center gap-2;
 }
 .sideheading {
-  @apply text-2xl w-full text-left tracking-widest uppercase font-bold text-[#F85E9F];
+  @apply lg:text-xl xl:text-2xl w-full text-left tracking-widest uppercase font-bold text-[#F85E9F];
 }
 .sideDesc {
-  @apply text-4xl font-bold text-black flex flex-col leading-normal;
+  @apply lg:text-3xl xl:text-4xl font-bold text-black flex flex-col leading-normal;
 }
 .destButton {
   @apply animation bg-[#5d50c6] hover:bg-[#7061e0] flex justify-center rounded-full w-[50px] p-10 h-fit;
@@ -27,4 +27,16 @@
 }
 .destCard {
   @apply w-[350px] h-[450px] flex items-center justify-center border border-gray-200 rounded-3xl animation cursor-pointer shadow-sm hover:shadow-md;
+}
+.SecondSectionDiv {
+  @apply w-full justify-center items-center flex flex-wrap gap-20 mt-10;
+}
+.DemoButton {
+  @apply animation logIn !w-[180px] shadow-sm hover:shadow-md !font-bold !p-4 flex justify-center border border-gray-100 gap-2;
+}
+.Travel-box {
+  @apply w-[550px] py-6 px-8 flex items-center  gap-4;
+}
+.CCard {
+  @apply w-[300px] px-8 h-[400px] flex items-center border border-gray-200 rounded-2xl animation cursor-pointer shadow-sm  hover:shadow-md;
 }

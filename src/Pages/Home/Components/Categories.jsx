@@ -25,7 +25,7 @@ const Categories = () => {
         initial={{ scale: 0.99 }}
         whileHover={{ scale: 1 }}
         transition={{ duration: 0.5 }}
-        className=" col-span-3  flex gap-7 flex-nowrap overflow-visible"
+        className=" col-span-3  flex gap-7 flex-nowrap "
       >
         <CategoryCards
           Image={Guide}
