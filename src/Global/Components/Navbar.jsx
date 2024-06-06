@@ -9,7 +9,7 @@ const Navbar = () => {
     <section className="flex justify-center">
       <nav className="container flex justify-between sm:flex-row  flex-row-reverse px-4 py-4 items-center">
         <div className="flex lg:hidden" onClick={() => setDrawer(!drawer)}>
-          <img src={DrawerMenu} alt="menu" />
+          <img src={DrawerMenu} alt="menu" className="cursor-pointer" />
         </div>
         <div className="lg:hidden">
           <div
@@ -21,7 +21,7 @@ const Navbar = () => {
           >
             <div className={drawer ? "visible" : "invisible "}>
               <div className="w-full p-4 justify-end flex" onClick={() => setDrawer(false)}>
-                <IoClose className="text-white size-6" />
+                <IoClose className="text-white size-6 cursor-pointer" />
               </div>
               <div className="flex flex-col p-4 gap-5">
                 <p className="text-white cursor-pointer p-2">Home</p>
