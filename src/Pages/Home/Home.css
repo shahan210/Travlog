@@ -118,6 +118,9 @@
 .footerHeadDiv {
   @apply sm:grid sm:grid-cols-3 flex flex-col;
 }
-.footeropt{
-  @apply hover:underline
+.footeropt {
+  @apply hover:underline;
+}
+.lgHover {
+  @apply cursor-pointer hover:text-[#7061e0];
 }

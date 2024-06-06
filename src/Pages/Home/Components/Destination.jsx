@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../../Global/Components/Button";
 import { TiArrowLeft, TiArrowRight } from "react-icons/ti";
 import DestinationCards from "./DestinationCards";
-import Beach from "../../../assets/PNG/Rectangle 6.png";
+import Beach from "../../../assets/PNG/Beach.png";
 import Fish from "../../../assets/PNG/Fish.png";
 import Mount from "../../../assets/PNG/Mountains.png";
 import { motion } from "framer-motion";

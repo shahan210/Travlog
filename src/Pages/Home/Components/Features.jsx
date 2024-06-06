@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Location from "../../../assets/PNG/Group 9239.png";
-import Calender from "../../../assets/PNG/Group 9239 (1).png";
-import Coupon from "../../../assets/PNG/Group 9239 (2).png";
+import Location from "../../../assets/PNG/Location.png";
+import Calender from "../../../assets/PNG/Calender.png";
+import Coupon from "../../../assets/PNG/Coupon.png";
 import Back from "../../../assets/PNG/BACKGROUND.png";
 const Features = () => {
   return (

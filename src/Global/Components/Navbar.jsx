@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/PNG/Vector.png";
+import Logo from "../../assets/PNG/Travlog.png";
 import Button from "./Button";
 import DrawerMenu from "../../assets/PNG/Drawer.png";
 import { IoClose } from "react-icons/io5";
@@ -39,10 +39,10 @@ const Navbar = () => {
           <h1 className="text-lg lg:text-2xl font-bold ">Travlog</h1>
         </div>
         <div className="lg:flex hidden text-gray-400 gap-20 text-sm font-bold">
-          <p className="text-black cursor-pointer">Home</p>
-          <p className="cursor-pointer">Discover</p>
-          <p className="cursor-pointer">Special Deals</p>
-          <p className="cursor-pointer">Contact</p>
+          <p className="text-black lgHover">Home</p>
+          <p className="lgHover">Discover</p>
+          <p className="lgHover">Special Deals</p>
+          <p className="lgHover">Contact</p>
         </div>
         <div className="hidden sm:flex justify-between gap-2">
           <div>

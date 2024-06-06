@@ -1,7 +1,7 @@
 import React from "react";
-import Guide from "../../../assets/PNG/destination 1.png";
-import Weather from "../../../assets/PNG/cloudy 1.png";
-import EasyBooking from "../../../assets/PNG/booking 1.png";
+import Guide from "../../../assets/PNG/Guide.png";
+import Weather from "../../../assets/PNG/Weather.png";
+import EasyBooking from "../../../assets/PNG/EasyBooking.png";
 import CategoryCards from "./Cards";
 import { motion } from "framer-motion";
 const Categories = () => {

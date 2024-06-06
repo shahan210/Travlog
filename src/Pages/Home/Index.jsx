@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Layout from "../../Global/Layout";
-import Trip from "../../assets/PNG/Group.png";
+import Trip from "../../assets/PNG/Trip.png";
 import Rbitz from "../../assets/PNG/Rbitz.png";
 import Airbnb from "../../assets/PNG/airbnb.png";
 import Booking from "../../assets/PNG/booking.png";

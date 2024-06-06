@@ -1,6 +1,6 @@
 import React from "react";
-import TravelPic from "../../../assets/PNG/Group 9238.png";
-import TravelTag from "../../../assets/PNG/Frame 50.png";
+import TravelPic from "../../../assets/PNG/TravelPic.png";
+import TravelTag from "../../../assets/PNG/TravelTag.png";
 import { motion } from "framer-motion";
 const Travel = () => {
   return (

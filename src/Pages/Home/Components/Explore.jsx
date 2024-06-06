@@ -1,5 +1,5 @@
 import React from "react";
-import Planes from "../../../assets/PNG/Group 1.png";
+import Planes from "../../../assets/PNG/Planes.png";
 import Case from "../../../assets/PNG/Suitcase.png";
 import Play from "../../../assets/PNG/Play.png";
 import Button from "../../../Global/Components/Button";
