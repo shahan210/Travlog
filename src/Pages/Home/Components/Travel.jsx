@@ -11,38 +11,38 @@ const Travel = () => {
       transition={{ duration: 1 }}
       className="my-20 p-2"
     >
-      <div className="grid grid-cols-3 relative">
-        <div className="col-span-2 overflow-visible">
-          <img src={TravelPic} alt="" className="w-[1100px] h-[700px] ml-[-120px]" />
+      <div className="lg:grid lg:grid-cols-3 flex flex-col relative">
+        <div className="lg:col-span-2 overflow-visible lg:m-0 mb-5">
+          <img src={TravelPic} alt="" className="w-[1100px] lg:h-[600px] xl:h-[700px] lg:ml-[-120px] " />
         </div>
-        <div className="p-2 flex flex-col gap-4 relative">
+        <div className="p-2 flex flex-col  gap-4 relative">
           <p className="sideheading">Travel Point</p>
           <div className="sideDesc">
             <p>We helping you find your dream location</p>
           </div>
-          <p className="text-gray-500">
+          <p className="text-gray-500 text-center">
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
             Latin literature from 45 BC.
           </p>
-          <div className="absolute top-[30%] right-[-27%] ">
-            <img src={TravelTag} alt="" className=" cursor-pointer" />
+          <div className="absolute lg:top-[30%] lg:right-[-6%] xl:top-[30%] xl:right-[-27%] ">
+            <img src={TravelTag} alt="" className=" cursor-pointer lg:w-[220px] xl:w-fit lg:block hidden" />
           </div>
           <div className="flex gap-4 flex-wrap my-20">
-            <div className="p-2 flex flex-col gap-2 justify-center items-center w-[170px] h-[120px] border border-gray-200 rounded-3xl">
-              <p className="text-2xl font-semibold text-[#ff5722]">500+</p>
-              <p>Holiday Package</p>
+            <div className="travelBox">
+              <p className="travelBox-head">500+</p>
+              <p className="tracelBox-dec">Holiday Package</p>
             </div>
-            <div className="p-2 flex flex-col gap-2 justify-center items-center w-[170px] h-[120px] border border-gray-200 rounded-3xl">
-              <p className="text-2xl font-semibold text-[#ff5722]">100</p>
-              <p>Luxury Hotel</p>
+            <div className="travelBox">
+              <p className="travelBox-head">100</p>
+              <p className="tracelBox-dec">Luxury Hotel</p>
             </div>
-            <div className="p-2 flex flex-col gap-2 justify-center items-center w-[170px] h-[120px] border border-gray-200 rounded-3xl">
-              <p className="text-2xl font-semibold text-[#ff5722]">7</p>
-              <p>Premium Airlines</p>
+            <div className="travelBox">
+              <p className="travelBox-head">7</p>
+              <p className="tracelBox-dec">Premium Airlines</p>
             </div>
-            <div className="p-2 flex flex-col gap-2 justify-center items-center w-[170px] h-[120px] border border-gray-200 rounded-3xl">
-              <p className="text-2xl font-semibold text-[#ff5722]">2k+</p>
-              <p>Happy Customer</p>
+            <div className="travelBox">
+              <p className="travelBox-head">2k+</p>
+              <p className="tracelBox-dec">Happy Customer</p>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Destination = () => {
       transition={{ duration: 1 }}
       className="my-20 p-2"
     >
-      <div className="my-10 flex justify-between items-center">
+      <div className="my-10 flex justify-between lg:flex-row sm:flex-col sm:gap-5 items-center">
         <div>
           <p className="sideheading">Top Destination</p>
           <div className="sideDesc">
@@ -39,13 +39,20 @@ const Destination = () => {
         </div>
       </div>
       <div className="destCardDiv">
-        <DestinationCards Image={Beach} title="Paradise Beach, Bantayan Island" place="Rome, Italy" rating={4.8} />
-        <DestinationCards Image={Fish} title="Ocean with full of Colors" place="Maldives" rating={4.5} />
+        <DestinationCards
+          Image={Beach}
+          title="Paradise Beach, Bantayan Island"
+          place="Rome, Italy"
+          rating={4.8}
+          price={550.16}
+        />
+        <DestinationCards Image={Fish} title="Ocean with full of Colors" place="Maldives" rating={4.5} price={20.99} />
         <DestinationCards
           Image={Mount}
           title="Mountain View, Above the cloud"
           place="United Arab Emirates"
           rating={5.0}
+          price={150.99}
         />
       </div>
     </motion.section>

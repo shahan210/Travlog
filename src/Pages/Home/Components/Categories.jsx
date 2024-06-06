@@ -11,9 +11,9 @@ const Categories = () => {
       whileInView={{ y: 0, opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className="w-full grid grid-cols-4 my-32 p-2 gap-2 overflow-auto"
+      className="w-full lg:grid lg:grid-cols-4 my-32 p-2 gap-2 flex flex-col justify-center items-center overflow-auto"
     >
-      <div className="flex flex-col gap-3 justify-center w-fit items-center">
+      <div className="flex flex-col gap-3 justify-center sm:w-full lg:w-fit items-center">
         <p className="sideheading">Services</p>
         <div className="sideDesc">
           <p>Our top value</p>
@@ -28,6 +28,7 @@ const Categories = () => {
         className=" col-span-3  flex gap-7 flex-nowrap "
       >
         <CategoryCards
+          className="CCard border border-gray-200 !shadow-none"
           Image={Guide}
           Title={"Best Tour Guide"}
           Desc={"What looked like a small patch of purple grass, above five feet."}
@@ -39,6 +40,7 @@ const Categories = () => {
         />
         <CategoryCards
           Image={Weather}
+          className="CCard border border-gray-200 !shadow-none"
           Title={"Weather Forecast"}
           Desc={"What looked like a small patch of purple grass, above five feet."}
         />{" "}
