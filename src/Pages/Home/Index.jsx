@@ -10,10 +10,12 @@ import Categories from "./Components/Categories";
 import Explore from "./Components/Explore";
 import "./Home.css";
 import Destination from "./Components/Destination";
+import Travel from "./Components/Travel";
+
 const Index = () => {
   return (
     <Layout>
-      <motion.div className="w-full mt-10">
+      <div className="w-full mt-10">
         {/* First Section  */}
         <Explore />
         {/* Second Section */}
@@ -21,7 +23,7 @@ const Index = () => {
           initial={{ y: 100, opacity: 0, scale: 1 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
           className="w-full justify-center items-center flex gap-28 mt-10"
         >
           <img src={Trip} className=" cursor-pointer" alt="Tripadvisor" />
@@ -34,7 +36,10 @@ const Index = () => {
         <Categories />
         {/* Fourth Section */}
         <Destination />
-      </motion.div>
+        {/* Fifth Section */}
+        <Travel />
+        {/* Sixth Section */}
+      </div>
     </Layout>
   );
 };
